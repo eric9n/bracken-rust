@@ -1,0 +1,19 @@
+[package]
+name = "bracken"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "bracken"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = { version = "4.4.10", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rayon = "1.10.0"
+memmap2 = "0.9.4"
+dashmap = { version = "5.5.3", features = ["rayon"] }
+chrono = "0.4"
