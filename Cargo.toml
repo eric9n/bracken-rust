@@ -2,6 +2,10 @@
 name = "bracken"
 version = "0.1.0"
 edition = "2021"
+description = "Rust-based implementation of the Bracken library for enhanced k-mer based genomic abundance estimation."
+license = "MIT"
+repository = "https://github.com/eric9n/bracken-rust"
+keywords = ["bioinformatics", "metagenomics"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,5 +19,5 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 rayon = "1.10.0"
 memmap2 = "0.9.4"
-dashmap = { version = "5.5.3", features = ["rayon"] }
+dashmap = { version = "6.0.1", features = ["rayon"] }
 chrono = "0.4"
